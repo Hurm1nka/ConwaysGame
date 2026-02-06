@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Conwaysgame" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/background_primary</item>
+        <item name="android:statusBarColor">@color/background_primary</item>
+        <item name="android:navigationBarColor">@color/background_primary</item>
+    </style>
+
+    <style name="Theme.Conwaysgame" parent="Base.Theme.Conwaysgame" />
+</resources>

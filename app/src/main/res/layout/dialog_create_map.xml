@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/card_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maps_title"
+        android:textSize="18sp"
+        android:textColor="@color/text_on_card"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Name: label left, box right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:textColor="@color/text_on_card" />
+
+        <EditText
+            android:id="@+id/dialog_create_name"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/input_box_background"
+            android:paddingHorizontal="12dp"
+            android:inputType="text"
+            android:textColor="@color/text_on_card"
+            android:maxLines="1"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Width: label left, box right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/width"
+            android:textSize="16sp"
+            android:textColor="@color/text_on_card" />
+
+        <EditText
+            android:id="@+id/dialog_create_width"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/input_box_background"
+            android:paddingHorizontal="12dp"
+            android:inputType="number"
+            android:textColor="@color/text_on_card"
+            android:maxLines="1"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Height: label left, box right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/height"
+            android:textSize="16sp"
+            android:textColor="@color/text_on_card" />
+
+        <EditText
+            android:id="@+id/dialog_create_height"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/input_box_background"
+            android:paddingHorizontal="12dp"
+            android:inputType="number"
+            android:textColor="@color/text_on_card"
+            android:maxLines="1"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/dialog_create_cancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/no"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/text_on_card" />
+
+        <ImageButton
+            android:id="@+id/dialog_create_confirm"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/create_map"
+            android:src="@drawable/ic_check"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/background_primary" />
+    </LinearLayout>
+</LinearLayout>

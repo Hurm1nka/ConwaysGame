@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
 
-// GET /api/maps — список карт
 app.get('/api/maps', (req, res) => {
   try {
     const maps = db.listMaps();
@@ -18,7 +17,6 @@ app.get('/api/maps', (req, res) => {
   }
 });
 
-// GET /api/maps/:id — одна карта
 app.get('/api/maps/:id', (req, res) => {
   try {
     const id = parseInt(req.params.id, 10);
@@ -35,7 +33,6 @@ app.get('/api/maps/:id', (req, res) => {
   }
 });
 
-// POST /api/maps — создать карту
 app.post('/api/maps', (req, res) => {
   try {
     const { name, width, height, cells } = req.body;
@@ -62,7 +59,6 @@ app.post('/api/maps', (req, res) => {
   }
 });
 
-// PUT /api/maps/:id — обновить карту
 app.put('/api/maps/:id', (req, res) => {
   try {
     const id = parseInt(req.params.id, 10);
@@ -98,7 +94,6 @@ app.put('/api/maps/:id', (req, res) => {
   }
 });
 
-// DELETE /api/maps/:id — удалить карту
 app.delete('/api/maps/:id', (req, res) => {
   try {
     const id = parseInt(req.params.id, 10);

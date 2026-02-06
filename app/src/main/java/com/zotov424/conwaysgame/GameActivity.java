@@ -12,10 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.appbar.MaterialToolbar;
 
-/**
- * Экран игры Conway's Game of Life: сетка, кнопки Play (старт симуляции), Step (шаг),
- * Stop (стоп + сохранение состояния), Edit, Delete. Крестик — выход на главный экран.
- */
 public class GameActivity extends AppCompatActivity
         implements ExitConfirmDialogFragment.ExitConfirmListener, EditMapDialogFragment.EditMapListener {
 
@@ -28,7 +24,6 @@ public class GameActivity extends AppCompatActivity
     private GameGridView gameGrid;
     private TextView gameTitle;
 
-    /** Текущее состояние клеток на экране (может отличаться от map.cells во время симуляции). */
     private String currentCells;
     private int gridWidth;
     private int gridHeight;

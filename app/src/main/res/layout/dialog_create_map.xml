@@ -15,7 +15,6 @@
         android:textColor="@color/text_on_card"
         android:layout_marginBottom="16dp" />
 
-    <!-- Name: label left, box right -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +43,6 @@
             android:gravity="center_vertical" />
     </LinearLayout>
 
-    <!-- Width: label left, box right -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,7 +71,6 @@
             android:gravity="center_vertical" />
     </LinearLayout>
 
-    <!-- Height: label left, box right -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

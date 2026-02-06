@@ -2,13 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!-- Интерфейс по макету -->
     <color name="background_primary">#33607D</color>
     <color name="card_background">#D9D9D9</color>
     <color name="text_on_background">#FFFFFFFF</color>
     <color name="text_on_card">#FF212121</color>
     <color name="input_box_background">#9E9E9E</color>
-    <!-- Сетка игры на фоне #33607D -->
     <color name="cell_alive">#FFB0BEC5</color>
     <color name="cell_dead_stroke">#D9D9D9</color>
 </resources>
